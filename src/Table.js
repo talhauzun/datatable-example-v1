@@ -1,5 +1,4 @@
-import 'datatables.net-bs4/css/dataTables.bootstrap4.css'
-//import 'datatables.net-dt/css/jquery.datatables.css'
+
 import React, {Component} from 'react'
 //import App from "./App";
 
@@ -30,8 +29,10 @@ export class Table extends Component {
     render() {
         return (
             <div>
-                <table className="display" width="100%" ref = {el => this.el = el }></table>
-
+                <div className="container">
+                <table className="table table-striped table-bordered" width="100%" ref = {el => this.el = el }></table>
+                </div>
+              
             </div>
         );
     }
